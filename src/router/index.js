@@ -13,6 +13,11 @@ const router = createRouter({
       path: '/conflicts/:id',
       name: 'conflict-detail',
       component: () => import('../views/DetailView.vue')
+    },
+    {
+      path: '/create',
+      name: 'create-conflict',
+      component: () => import('../views/Createview.vue')
     }
   ]
 })

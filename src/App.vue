@@ -30,6 +30,9 @@
         <RouterLink to="/" class="nav-link">
           <span class="link-icon">⬡</span> Inici
         </RouterLink>
+        <RouterLink to="/create" class="nav-link nav-link-create">
+          <span class="link-icon">＋</span> Nou Conflicte
+        </RouterLink>
       </div>
     </nav>
 
@@ -197,6 +200,12 @@ body {
   text-transform: uppercase;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .nav-link {
   font-family: var(--cond);
   font-size: 0.85rem;
@@ -221,6 +230,17 @@ body {
   color: #fff;
   border-color: var(--border2);
   background: var(--surface);
+}
+
+.nav-link-create {
+  background: var(--red-dim);
+  border-color: rgba(230,57,70,0.3) !important;
+  color: var(--red) !important;
+}
+
+.nav-link-create:hover {
+  background: rgba(230,57,70,0.15) !important;
+  color: #fff !important;
 }
 
 /* ─── SCAN LINE ──────────────────────────────────── */
@@ -278,6 +298,5 @@ main {
 ::-webkit-scrollbar-thumb { background: var(--surface); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--border2); }
 
-/* ─── ROUTER LINK ACTIVE FIX ─────────────────────── */
 a { color: inherit; }
 </style>
