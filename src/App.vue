@@ -31,7 +31,7 @@
           <span class="link-icon">⬡</span> Inici
         </RouterLink>
         <RouterLink to="/create" class="nav-link nav-link-create">
-          <span class="link-icon">＋</span> Nou Conflicte
+          <span class="link-icon">＋</span> Conflicte Nou
         </RouterLink>
       </div>
     </nav>
